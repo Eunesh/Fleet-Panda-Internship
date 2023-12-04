@@ -1,4 +1,6 @@
-mixedArray = [1, "Hellohi", "world", 3.14, 777, 7.77, true, false, 70, "hi", 5]
+
+
+mixedArray = [1, "Hellohi", "world", 3.14, 777, 7.77, true, false, 70, "hi", 5, "hello"]
 
 
 
@@ -19,13 +21,6 @@ def float
     @float ||= []
 end
 
-def dumb
-    @dumb ||= []
-end
-
-def smart
-    @smart ||= []
-end
 
 
 
@@ -113,22 +108,21 @@ def LongestString(arr)
     return word
 end
 
-# For distributing String by size
-def DistributeString(arr)
 
+def GroupString(arr)
+    group = Hash.new()
     for var in arr
-        if var.length >= 5
-            smart.push(var)
-        else
-            dumb.push(var);
-        end
-
+        group[var] = var.length;
     end
 end
 
 
 
 #Outputs
+
+GroupString(string);
+
+
 
 #Specific datatype array distributed according to datatype
 
