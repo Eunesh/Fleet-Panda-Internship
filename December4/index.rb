@@ -33,31 +33,20 @@ end
 def CheckandAdd(var)
     #Arrays for specific Datatypes
 
-    # if it is String we push that variable into above string array
-    if var.instance_of? String
+    case var
+    when String
         string.push(var)
-    end
-
-    #if it is Integer we push that variable into above integer array
-    if var.instance_of? Integer
+    when Integer
         number.push(var)
-    end
-
-     #if it is TrueClass(Boolean) we push that variable into above boolean array
-    if  var.instance_of? TrueClass
+    when TrueClass
         boolean.push(var)
-    end
-
-    #if it is FalseClass we push that variable into above boolean array
-    if var.instance_of? FalseClass
+    when FalseClass
         boolean.push(var)
+    when Float
+        boolean.push(var)
+    else
+        "There are no more data types"
     end
-
-    #if it is Float we push that variable into above float array
-    if var.instance_of? Float
-        float.push(var);
-    end
-
 end
 
 # for pushing different datatypes in specific array
