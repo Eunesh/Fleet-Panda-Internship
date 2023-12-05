@@ -13,7 +13,6 @@ lambda_demo(&a_lambda)
 #Difference between Lambda and Procs
 
 #1st Differences
-
 #proc will not check arguments strictly if we pass less then required arguments instead of 2 then still code will not throw erro and missing argument is shown as null
 procvar = proc {|x, y| puts "hey its #{x} and #{y}" }
 
