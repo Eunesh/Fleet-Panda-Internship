@@ -18,8 +18,8 @@ end
 
 
 #calling block without yield
-def explicit_block(&unesh)
-  unesh.call("unesh")  # same as yield
+def explicit_block(&block)
+  block.call("unesh")  # same as yield
 end
 
 explicit_block {|name| puts "Explicit Block call by #{name}"}

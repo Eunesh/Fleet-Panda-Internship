@@ -21,6 +21,10 @@ def float
     @float ||= []
 end
 
+# def group
+#     @group = Hash.new()
+# end
+
 
 
 
@@ -114,13 +118,18 @@ def GroupString(arr)
     for var in arr
         group[var] = var.length;
     end
+
+    return group;
+
 end
+
 
 
 
 #Outputs
 
-GroupString(string);
+puts GroupString(string);
+
 
 
 

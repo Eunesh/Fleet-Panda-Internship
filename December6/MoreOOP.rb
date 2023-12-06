@@ -25,6 +25,9 @@ class ArrayofHashes
 end
 
 class commit
+  def helloword
+
+  end
 
 
 end
