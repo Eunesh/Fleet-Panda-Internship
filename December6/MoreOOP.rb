@@ -24,6 +24,11 @@ class ArrayofHashes
   end
 end
 
+class commit
+
+
+end
+
 # array = ArrayofHashes.new("player1", [1,2,3])
 # array2 = ArrayofHashes.new("player2", [4,5,6])
 # array3 = ArrayofHashes.new("player2", [7,8,9])
