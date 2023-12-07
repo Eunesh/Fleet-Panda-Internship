@@ -15,4 +15,4 @@ def counting_valleys(steps, path)
 end
 
 
-counting_valleys(8, UDDDUDUU)
+counting_valleys(8, "UDDDUDUU")

@@ -3,8 +3,8 @@ def repeatedString1(s, n)
   new_s = ""
   n.times {new_s = new_s + s}
 
-  new_s[0..n].count('a')
-
+  result = new_s[0..n].count('a')
+  return result
 end
 
 

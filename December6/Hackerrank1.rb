@@ -9,7 +9,7 @@ def sockMerchant(ar)
       hashArr[num] = true
   end
  end
- puts pairs
+pairs
 
 end
 
