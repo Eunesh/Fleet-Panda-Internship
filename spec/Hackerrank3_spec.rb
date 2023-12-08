@@ -13,12 +13,12 @@ describe "jumping_on_clouds" do
 
    #Negative case 1
    it "It returns the steps to reach safe cloud(0)" do
-    expect(jumping_on_clouds([0,1,0,0,0,1,0])).to eql(4)
+    expect{jumping_on_clouds(false)}.to raise_error
   end
 
 
   #Negative case 2
   it "It returns the steps to reach safe cloud(0)" do
-    expect(jumping_on_clouds([0,1,0,0,0,1,0,1,0,1,0])).to eql(6)
+    expect(jumping_on_clouds([0,1,0,0,0,1,0,1,0,1,0])).to raise_error
   end
 end

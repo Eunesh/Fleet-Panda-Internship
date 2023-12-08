@@ -1,5 +1,5 @@
 class ArrayofHashes
-  #@@ Class variable
+  #@@ Class variable  # [{},{}]
   @@bigArr = []
   def initialize(playername, arr)
     #@ class instance variable
@@ -24,23 +24,17 @@ class ArrayofHashes
   end
 end
 
-class commit
-  def helloword
-
-  end
+# class Insert
 
 
-end
+# end
 
 # array = ArrayofHashes.new("player1", [1,2,3])
 # array2 = ArrayofHashes.new("player2", [4,5,6])
-# array3 = ArrayofHashes.new("player2", [7,8,9])
+# array3 = ArrayofHashes.new("player3", [7,8,9])
 
 # array.Add();
 # array2.Add();
 # array3.Add();
 # array.emptyArr()
 # array.getHash();
-
-
-# array2.getHash();
