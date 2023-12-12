@@ -8,8 +8,6 @@ def repeatedString1(s, n)
 end
 
 
-puts repeatedString1("a", 10000)
-
 
 
 
