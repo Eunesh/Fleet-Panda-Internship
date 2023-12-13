@@ -1,18 +1,30 @@
 class Book
-  @@availableBookCheck = {
-    Nepal: true,
-    Habit: true,
-    Notion: true
-  }
-
+  attr_accessor :bookname
   def initialize()
+    # @filename = 'Bookname.txt'
+    @@bookname ={
+      HarryPotter: "Available",
+      GoodAndBad: "Available",
+      HurryUp: "Available",
+      CantHurtMe: "Available",
+    }
   end;
 
   def addBooks(bookname)
-    @@availableBookCheck[bookname.intern] = true
+   @@bookname[bookname] = "Available"
+    # open(@filename, 'a') do |f|
+    #   f << "\n" + "#{@bookname}"
+    # end
   end
 
-  def availableBookList
-    return  @@availableBookCheck;
+  def bookList
+    # content = File.read(@filename)
+    # return  content
+    return @@bookname
   end
 end
+
+# b = Book.new();
+
+# # b.addBooks("Again One")
+# puts b.bookname;

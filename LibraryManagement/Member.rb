@@ -1,22 +1,24 @@
 require_relative 'Book'
-require_relative 'Transaction'
+
 
 
 class Member
   attr_accessor :book
-  def initialize(book, transaction)
+  def initialize(book)
     @book = book.new    # Creating instance of Passed Book class, this is becasue  we can now access Book class from Member class
-    @transaction = transaction.new
   end
 
   def borrowBook(bookname)
-    @booklist = @book.availableBookList;
+    @booklist = @book.bookList;
     if @booklist.key?(bookname.intern)
-      @booklist[bookname.intern] = "This book is borrowed"
+      @booklist.delete(bookname.intern)
+      # @booklist[bookname.intern] = "This book is borrowed"
+      return true
     else
-      puts "Sorry bookname not found!!!"
+      return false
     end
   end
+
 
   def returnBook(bookname)
 
